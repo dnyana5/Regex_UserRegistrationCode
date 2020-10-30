@@ -76,3 +76,14 @@ then
 else
         echo "Invalid Password"
 fi
+
+
+#password validation rule 4
+read -p "User Password - " password
+pattern="^([a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[@$#%*+]).{8,}$"
+if [[ $password =~ $pattern ]]
+then
+        echo "Valid Password"
+else
+        echo "Invalid Password"
+fi
