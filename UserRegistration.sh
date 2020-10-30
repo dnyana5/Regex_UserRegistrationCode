@@ -21,3 +21,14 @@ then
 else
         echo "invalid Last name"
 fi
+
+
+#Email validation
+read -p "User email id : " email
+pattern3="^[a-zA-Z]{1,}([.\-+]?[a-zA-Z0-9]*)?\@[a-z0-9]{1,}\.([a-z]{2,4})[,\.]?([a-z]{2,4})?$"
+if [[ $email =~ $pattern3 ]]
+then
+        echo "valid email id"
+else
+        echo "invalid email id"
+fi
