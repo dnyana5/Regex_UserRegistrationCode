@@ -32,3 +32,14 @@ then
 else
         echo "invalid email id"
 fi
+
+
+#phone number validation
+read -p "User phone number - " number
+pattern4="^([\+]91)?[6-9]{1}[0-9]{9}$"
+if [[ $number =~ $pattern4 ]]
+then
+        echo "valid phone number"
+else
+        echo "invalid phone number"
+fi
