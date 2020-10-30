@@ -43,3 +43,14 @@ then
 else
         echo "invalid phone number"
 fi
+
+
+#password validation rule 1
+read -p "User Password - " password
+pattern="^[a-z]{8,}$"
+if [[ $password =~ $pattern ]]
+then
+        echo "Valid Password"
+else
+        echo "Invalid Password"
+fi
